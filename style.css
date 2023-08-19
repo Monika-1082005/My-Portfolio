@@ -227,6 +227,7 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
+
 .work img {
     width: 100%;
     border-radius: 10px;
@@ -473,3 +474,11 @@ nav .fas {
     color: #ff004f;
 }
 
+#msDesigner{
+    color: #ababab;
+    text-decoration: none;
+}
+#msDesigner:hover{
+    background-color: gold;
+    color: black;
+}
