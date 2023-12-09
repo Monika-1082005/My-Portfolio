@@ -110,11 +110,6 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
-.sub-title {
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-}
 
 .tab-titles {
     display: flex;
@@ -377,6 +372,12 @@ form .btn2 {
     color: #ff004f;
 }
 
+.sub-btn{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 /* Media Queries for small screen  */
 nav .fas {
     display: none;
@@ -428,9 +429,6 @@ nav .fas {
         cursor: pointer;
     }
 
-    .sub-title {
-        font-size: 40px;
-    }
 
     .about-col-1,
     .about-col-2 {
