@@ -517,6 +517,17 @@ nav .fas {
         font-size: 30px;
     }
 
+    .logo{
+        display: none;
+    }
+    nav{
+        border:none;
+    }
+    #menuIcon{
+        position: fixed;
+        right: 20px;
+    }
+
     nav .fas {
         display: block;
         font-size: 25px;
