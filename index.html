@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monika's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/d606617640.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
 
   <div id="header">
@@ -22,617 +32,420 @@
       <div class="nav-content">
         <div class="header-text">
           <h1>Hello,<br />I'm <span>Monika Dalawat</span><br /></h1>
-          <p><span id="element"></span> in making</p>
+          <p>And I'm a <span id="element"></span></p>
         </div>
-        <!-- <div class="bgimg">
-            <img src="./images/bg4.png" alt="">
-          </div> -->
 
-        <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Monika's Portfolio</title>
-          <link rel="stylesheet" href="style.css" />
-          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script src="https://kit.fontawesome.com/d606617640.js" crossorigin="anonymous"></script>
-        </head>
+      </div>
 
-        <body>
-
-          <div id="header">
-            <nav>
-              <img src="images/logo1.png" alt="" class="logo" />
-              <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-              </ul>
-              <i class="fas fa-solid fa-bars" onclick="openmenu()" id="menuIcon"></i>
-            </nav>
-            <div class="container">
+    </div>
+  </div>
 
 
-              <div class="nav-content">
-                <div class="header-text">
-                  <h1>Hello,<br />I'm <span>Monika Dalawat</span><br /></h1>
-                  <p>And I'm a <span id="element"></span></p>
-                </div>
+  <!--------------------about--------------------->
 
-              </div>
+  <div id="about" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <!-- <img src="images/Monika (1) (1)-removebg-preview.jpg" alt="" /> -->
+          <img src="images/Designer__4_-removebg-preview.png" alt="" id="myImg" />
 
-            </div>
+
+        </div>
+
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I am a passionate web developer with expertise in ReactJS, JavaScript, HTML, and CSS, dedicated to
+            building
+            responsive and visually engaging web experiences. My focus lies in frontend development, where I
+            create
+            intuitive user interfaces using Tailwind CSS, Material UI, and Framer Motion. I have also worked
+            with
+            Firebase for authentication and real-time data handling. Beyond web development, I enjoy exploring
+            new
+            technologies and continuously improving my coding skills to build innovative and efficient
+            solutions.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('Experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
           </div>
-
-
-          <!--------------------about--------------------->
-
-          <div id="about" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-            <div class="container">
-              <div class="row">
-                <div class="about-col-1">
-                  <!-- <img src="images/Monika (1) (1)-removebg-preview.jpg" alt="" /> -->
-                  <img src="images/Designer__4_-removebg-preview.png" alt="" id="myImg" />
-
-
-                </div>
-
-                <div class="about-col-2">
-                  <h1 class="sub-title">About Me</h1>
-                  <p>
-                    I am a passionate web developer with expertise in ReactJS, JavaScript, HTML, and CSS, dedicated to
-                    building
-                    responsive and visually engaging web experiences. My focus lies in frontend development, where I
-                    create
-                    intuitive user interfaces using Tailwind CSS, Material UI, and Framer Motion. I have also worked
-                    with
-                    Firebase for authentication and real-time data handling. Beyond web development, I enjoy exploring
-                    new
-                    technologies and continuously improving my coding skills to build innovative and efficient
-                    solutions.
-                  </p>
-                  <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">
-                      Skills
-                    </p>
-                    <p class="tab-links" onclick="opentab('Experience')">
-                      Experience
-                    </p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                  </div>
-                  <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                      <li>
-                        <span>Programming
-                          Languages</span><br />ReactJs<br />JavaScript<br />CSS<br />HTML<br />Java<br />Python<br />SQL
-                      </li>
-                      <li><span>Framework</span><br />Bootstrap<br />Material UI<br />Tailwind CSS</li>
-                      <li><span>Tools</span><br />Postman<br />Git<br />Github<br />Firebase</li>
-                    </ul>
-                  </div>
-                  <div class="tab-contents" id="Experience">
-                    <ul>
-                      <li>
-                        <span>Aug 2023 - May 2024</span><br />Creative member at CSI-TCET
-                      </li>
-                      <li>
-                        <span></span><br />
-                      </li>
-                      <li>
-                        <span></span><br />
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-contents" id="Education">
-                    <ul>
-                      <li>
-                        <span>2026</span><br />Thakur college of Engineering &
-                        Technology,Kandivali East
-                      </li>
-                      <li>
-                        <span>2022</span><br />Thakur college of Science &
-                        Commerce,Kandivali East(HSC)
-                      </li>
-                      <li><span>2020</span><br />St.Francis De Sales School(SSC)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li>
+                <span>Programming
+                  Languages</span><br />ReactJs<br />JavaScript<br />CSS<br />HTML<br />Java<br />Python<br />SQL
+              </li>
+              <li><span>Framework</span><br />Bootstrap<br />Material UI<br />Tailwind CSS</li>
+              <li><span>Tools</span><br />Postman<br />Git<br />Github<br />Firebase</li>
+            </ul>
           </div>
-
-          <!------------------- Services ------------------->
-          <div id="services" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-            <div class="container">
-              <h1 class="sub-title">My Services</h1>
-              <div class="services-list">
-                <div>
-                  <i class="fa-solid fa-code"></i>
-                  <h2>Web Design</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Recusandae a iusto tempora, autem quidem beatae itaque quod quia,
-                    quam sint rerum necessitatibus enim doloremque fuga id sapiente,
-                    earum odio vero corporis quisquam in? Saepe amet unde illum itaque
-                    facere vitae, ipsum, consequuntur voluptate officia quia ducimus
-                    nostrum architecto pariatur ipsam!
-                  </p>
-                  <a href="#">Learn more</a>
-                </div>
-                <div>
-                  <i class="fa-solid fa-crop-simple"></i>
-                  <h2>UI/UX Design</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Recusandae a iusto tempora, autem quidem beatae itaque quod quia,
-                    quam sint rerum necessitatibus enim doloremque fuga id sapiente,
-                    earum odio vero corporis quisquam in? Saepe amet unde illum itaque
-                    facere vitae, ipsum, consequuntur voluptate officia quia ducimus
-                    nostrum architecto pariatur ipsam!
-                  </p>
-                  <a href="#">Learn more</a>
-                </div>
-                <div>
-                  <i class="fa-brands fa-app-store"></i>
-                  <h2>App Design</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Recusandae a iusto tempora, autem quidem beatae itaque quod quia,
-                    quam sint rerum necessitatibus enim doloremque fuga id sapiente,
-                    earum odio vero corporis quisquam in? Saepe amet unde illum itaque
-                    facere vitae, ipsum, consequuntur voluptate officia quia ducimus
-                    nostrum architecto pariatur ipsam!
-                  </p>
-                  <a href="#">Learn more</a>
-                </div>
-              </div>
-            </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li>
+                <span>Aug 2023 - May 2024</span><br />Creative member at CSI-TCET
+              </li>
+              <li>
+                <span></span><br />
+              </li>
+              <li>
+                <span></span><br />
+              </li>
+            </ul>
           </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li>
+                <span>2026</span><br />Thakur college of Engineering &
+                Technology,Kandivali East
+              </li>
+              <li>
+                <span>2022</span><br />Thakur college of Science &
+                Commerce,Kandivali East(HSC)
+              </li>
+              <li><span>2020</span><br />St.Francis De Sales School(SSC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <!------------------- Portfolio ------------------->
-          <div id="portfolio" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-            <div class="container">
-              <h1 class="sub-title">My Work</h1>
-              <div class="work-list">
-                <div class="work">
-                  <img src="images/AwareHer.png" alt="" class="work-imgs" />
-                  <div class="layer">
-                    <h3>AwareHer</h3>
-                    <p>
-                      "AwareHer" is a platform dedicated to empowering women by offering financial education tools to
-                      build
-                      literacy and confidence, guidance on legal rights to help women advocate for themselves, easy
-                      access to
-                      policies for women, and resources and connections for self-defense training to enhance safety.
+  <!------------------- Services ------------------->
+  <div id="services" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae a iusto tempora, autem quidem beatae itaque quod quia,
+            quam sint rerum necessitatibus enim doloremque fuga id sapiente,
+            earum odio vero corporis quisquam in? Saepe amet unde illum itaque
+            facere vitae, ipsum, consequuntur voluptate officia quia ducimus
+            nostrum architecto pariatur ipsam!
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae a iusto tempora, autem quidem beatae itaque quod quia,
+            quam sint rerum necessitatibus enim doloremque fuga id sapiente,
+            earum odio vero corporis quisquam in? Saepe amet unde illum itaque
+            facere vitae, ipsum, consequuntur voluptate officia quia ducimus
+            nostrum architecto pariatur ipsam!
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae a iusto tempora, autem quidem beatae itaque quod quia,
+            quam sint rerum necessitatibus enim doloremque fuga id sapiente,
+            earum odio vero corporis quisquam in? Saepe amet unde illum itaque
+            facere vitae, ipsum, consequuntur voluptate officia quia ducimus
+            nostrum architecto pariatur ipsam!
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                    </p>
+  <!------------------- Portfolio ------------------->
+  <div id="portfolio" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
 
-                    <div class="work">
-                      <img src="images/SweatFlix.png" alt="" class="work-imgs" />
-                      <div class="layer">
-                        <h3>SweatFlix</h3>
-                        <p>
-                          "SweatFlix" is your home workout assistant featuring a chatbot for solving doubts, workout
-                          videos, recent news and trends, and gamified challenges. This hackathon project is built with
-                          HTML, CSS, and JavaScript for the frontend, and Express.js and MongoDB for the backend.
-                        </p>
+        <div class="work">
+          <img src="images/AwareHer.png" alt="AwareHer" class="work-imgs" />
+          <div class="layer">
+            <h3>AwareHer</h3>
+            <p>
+              "AwareHer" is a platform dedicated to empowering women by providing financial education tools to build
+              literacy and confidence, guidance on legal rights to help women advocate for themselves, easy access to
+              policies relevant to women, and resources for self-defense training to enhance safety.
+            </p>
+            <a href="https://devfolio.co/projects/aware-her-504e" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-                        <a href="https://devfolio.co/projects/sweatfflix-fd10" target="_blank" id="explore-right"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                      </div>
-                    </div>
+        <div class="work">
+          <img src="images/SweatFlix.png" alt="SweatFlix" class="work-imgs" />
+          <div class="layer">
+            <h3>SweatFlix</h3>
+            <p>
+              "SweatFlix" is your home workout assistant, featuring a chatbot for solving doubts, workout videos, the
+              latest news and trends, and gamified challenges. This hackathon project is built with HTML, CSS, and
+              JavaScript for the frontend, and Express.js and MongoDB for the backend.
+            </p>
+            <a href="https://devfolio.co/projects/sweatfflix-fd10" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-                    <div class="work">
-                      <img src="images/amazon2.png" alt="" class="work-imgs" />
-                      <div class="layer">
-                        <h3>Amazon Clone</h3>
-                        <p>
-                          Crafted an Amazon clone with HTML and CSS, emphasizing visual elements and UI. Enhanced
-                          front-end skills, structuring content and styling. Hands-on experience deepened understanding
-                          of
-                          responsive design, resulting in a user-friendly and aesthetically pleasing website.
-                        </p>
+        <div class="work">
+          <img src="images/amazon2.png" alt="Amazon Clone" class="work-imgs" />
+          <div class="layer">
+            <h3>Amazon Clone</h3>
+            <p>
+              I crafted an Amazon clone using HTML and CSS, focusing on visual elements and UI. This project enhanced my
+              front-end skills by improving content structuring and styling. Through hands-on experience, I deepened my
+              understanding of responsive design, resulting in a user-friendly and aesthetically pleasing website.
+            </p>
+            <a href="https://monika-1082005.github.io/Amazon_Clone/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-                        <a href="https://monika-1082005.github.io/Amazon_Clone/" target="_blank" id="explore-right"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                      </div>
-                    </div>
+        <div class="work">
+          <img src="images/stopwatch.png" alt="Stopwatch Application" class="work-imgs" />
+          <div class="layer">
+            <h3>Stopwatch Application</h3>
+            <p>
+              Precision in time management! My stopwatch, built with HTML, CSS, and JavaScript, offers seamless control
+              with start, pause, and reset functionality. The sleek design enhances appeal, while lap time recording
+              adds versatility. Ideal for workouts or races, this responsive application ensures accurate timekeeping.
+            </p>
+            <a href="https://monika-1082005.github.io/PRODIGY_WD_02/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-                    <!-- -----  -->
-                    <div class="work">
-                      <img src="images/stopwatch.png" alt="" class="work-imgs" />
-                      <div class="layer">
-                        <h3>Stopwatch Application</h3>
-                        <p>
-                          Precision in time management! My stopwatch, built with HTML, CSS, and JavaScript, offers
-                          seamless control - start, pause, and reset with ease. The sleek design enhances appeal, while
-                          lap time recording adds versatility. Ideal for workouts or races, this responsive application
-                          is
-                          your go-to for accurate timekeeping.
-                        </p>
+        <div class="work">
+          <img src="images/weather.png" alt="Weather Application" class="work-imgs" />
+          <div class="layer">
+            <h3>Weather Application</h3>
+            <p>
+              Explore real-time weather with my Weather Application, crafted using HTML, CSS, and JavaScript. Fetching
+              data from a reliable API based on your location or input, it provides current conditions and temperature.
+              The sleek design ensures an easy, informative experience, making it your go-to for up-to-date weather
+              insights.
+            </p>
+            <a href="https://monika-1082005.github.io/Weather-App/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-                        <a href="https://monika-1082005.github.io/PRODIGY_WD_02/" target="_blank" id="explore-right"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                      </div>
-                    </div>
+        <div class="work">
+          <img src="images/starbucks.png" alt="Starbucks Landing Page" class="work-imgs" />
+          <div class="layer">
+            <h3>Starbucks Landing Page</h3>
+            <p>
+              Check out my Starbucks-inspired landing page! Crafted with HTML and CSS, it’s fully responsive and
+              captures the brand’s essence. From familiar colors to layout, it mirrors the Starbucks aesthetic,
+              showcasing my web development skills and commitment to a seamless user experience.
+            </p>
+            <a href="https://monika-1082005.github.io/PRODIGY_WD_01/#" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
+        <div class="work">
+          <img src="images/tic-tac-toe (1).png" alt="Tic Tac Toe Game" class="work-imgs" />
+          <div class="layer">
+            <h3>Tic Tac Toe Game</h3>
+            <p>
+              I crafted a Tic Tac Toe game using HTML, CSS, and JavaScript. The game features a sleek 3x3 grid layout
+              created with CSS Grid, while JavaScript handles game mechanics, ensuring smooth player turns, win checks,
+              and symbol updates. By listening to player clicks, the interactive interface delivers an engaging
+              experience.
+            </p>
+            <a href="https://monika-1082005.github.io/Tic-Tac-Toe/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-
-                    <div class="work">
-                      <img src="images/weather.png" alt="" class="work-imgs" />
-                      <div class="layer">
-                        <h3>Weather Application</h3>
-                        <p>
-                          Explore real-time weather with my Weather application, crafted using HTML, CSS, and
-                          JavaScript.
-                          Fetching data from a reliable API based on your location or input, it provides current
-                          conditions and temperature. The sleek design ensures an easy, informative experience, making
-                          it
-                          your go-to for up-to-date weather insights.
-                        </p>
-
-                        <a href="https://monika-1082005.github.io/Weather-App/" target="_blank" id="explore-right"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                      </div>
-                    </div>
-
-                    <!-- -----  -->
-                    <div class="work">
-                      <img src="images/starbucks.png" alt="" class="work-imgs" />
-                      <div class="layer">
-                        <h3>Starbucks Landing Page</h3>
-                        <p>
-                          Check out my Starbucks-inspired landing page! Crafted with HTML and CSS, it's responsive and
-                          captures the brand essence. From familiar colors to layout, it mirrors the Starbucks
-                          aesthetic,
-                          showcasing my web development skills and commitment to a seamless user experience.
-                        </p>
-                        <a href="https://monika-1082005.github.io/PRODIGY_WD_01/#" target="_blank"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                      </div>
-                    </div>
-                    <div class="work">
-                      <img src="images/tic-tac-toe (1).png" alt="" class="work-imgs" />
-                      <div class="layer">
-                        <h3>Tic Tac Toe Game</h3>
-                        <p>
-                          I crafted a Tic Tac Toe game using HTML, CSS, and JavaScript.
-                          The game boasts a sleek design with a 3x3 grid layout, created
-                          using CSS grid. JavaScript handles the game's mechanics,
-                          enabling smooth player turns, win checks, and symbol updates. By
-                          listening to player clicks, the interactive interface ensures an
-                          engaging experience.
-                        </p>
-                        <a href="https://monika-1082005.github.io/Tic-Tac-Toe/" target="_blank"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                      </div>
-                    </div>
-
-
-
-
-
-                  </div>
-
-                  <div class="work">
-                    <img src="images/SweatFlix.png" alt="" class="work-imgs" />
-                    <div class="layer">
-                      <h3>SweatFlix</h3>
-                      <p>
-                        "SweatFlix" is your home workout assistant featuring a chatbot for solving doubts, workout
-                        videos,
-                        recent
-                        news and trends, and gamified challenges. This hackathon project is built with HTML, CSS, and
-                        JavaScript
-                        for the frontend, and Express.js and MongoDB for the backend.
-                      </p>
-
-                      <a href="https://devfolio.co/projects/sweatfflix-fd10" target="_blank" id="explore-right"><i
-                          class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-
-                  <div class="work">
-                    <img src="images/amazon2.png" alt="" class="work-imgs" />
-                    <div class="layer">
-                      <h3>Amazon Clone</h3>
-                      <p>
-                        Crafted an Amazon clone with HTML and CSS, emphasizing visual elements and UI. Enhanced
-                        front-end
-                        skills,
-                        structuring content and styling. Hands-on experience deepened understanding of responsive
-                        design,
-                        resulting in a user-friendly and aesthetically pleasing website.
-                      </p>
-
-                      <a href="https://monika-1082005.github.io/Amazon_Clone/" target="_blank" id="explore-right"><i
-                          class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-
-                  <!-- -----  -->
-                  <div class="work">
-                    <img src="images/stopwatch.png" alt="" class="work-imgs" />
-                    <div class="layer">
-                      <h3>Stopwatch Application</h3>
-                      <p>
-                        Precision in time management! My stopwatch, built with HTML, CSS, and JavaScript, offers
-                        seamless
-                        control
-                        - start, pause, and reset with ease. The sleek design enhances appeal, while lap time recording
-                        adds
-                        versatility. Ideal for workouts or races, this responsive application is your go-to for accurate
-                        timekeeping.
-                      </p>
-
-                      <a href="https://monika-1082005.github.io/PRODIGY_WD_02/" target="_blank" id="explore-right"><i
-                          class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
 
 
-
-                  <div class="work">
-                    <img src="images/weather.png" alt="" class="work-imgs" />
-                    <div class="layer">
-                      <h3>Weather Application</h3>
-                      <p>
-                        Explore real-time weather with my Weather application, crafted using HTML, CSS, and JavaScript.
-                        Fetching
-                        data from a reliable API based on your location or input, it provides current conditions and
-                        temperature.
-                        The sleek design ensures an easy, informative experience, making it your go-to for up-to-date
-                        weather
-                        insights.
-                      </p>
-
-                      <a href="https://monika-1082005.github.io/Weather-App/" target="_blank" id="explore-right"><i
-                          class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-
-                  <!-- -----  -->
-                  <div class="work">
-                    <img src="images/starbucks.png" alt="" class="work-imgs" />
-                    <div class="layer">
-                      <h3>Starbucks Landing Page</h3>
-                      <p>
-                        Check out my Starbucks-inspired landing page! Crafted with HTML and CSS, it's responsive and
-                        captures the
-                        brand essence. From familiar colors to layout, it mirrors the Starbucks aesthetic, showcasing my
-                        web
-                        development skills and commitment to a seamless user experience.
-                      </p>
-                      <a href="https://monika-1082005.github.io/PRODIGY_WD_01/#" target="_blank"><i
-                          class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-                  <div class="work">
-                    <img src="images/tic-tac-toe (1).png" alt="" class="work-imgs" />
-                    <div class="layer">
-                      <h3>Tic Tac Toe Game</h3>
-                      <p>
-                        I crafted a Tic Tac Toe game using HTML, CSS, and JavaScript.
-                        The game boasts a sleek design with a 3x3 grid layout, created
-                        using CSS grid. JavaScript handles the game's mechanics,
-                        enabling smooth player turns, win checks, and symbol updates. By
-                        listening to player clicks, the interactive interface ensures an
-                        engaging experience.
-                      </p>
-                      <a href="https://monika-1082005.github.io/Tic-Tac-Toe/" target="_blank"><i
-                          class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <a href="" class="btn">See more</a>
-              </div>
-            </div>
-
-
-            <!-- <img src="https://leetcard.jacoblin.cool/dalawatmonika2801" alt="LeetCode Stats" />
+  <!-- <img src="https://leetcard.jacoblin.cool/dalawatmonika2801" alt="LeetCode Stats" />
     <img src="https://ghchart.rshah.org/Monika-1082005" alt="GitHub Contributions Graph" />
     
     
     <div id="github-stats"></div> -->
 
-            <!------------------- Contact ------------------->
-            <div id="contact">
-              <div class="container">
-                <div class="row">
-                  <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p>
-                      <i class="fa-solid fa-envelope"></i>dalawatmonika2801@gmail.com
-                    </p>
-                    <p><i class="fa-solid fa-phone"></i>8955423699</p>
-                    <div class="social-icons">
-                      <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-                      <a href="https://github.com/Monika-1082005/" target="_blank"><i
-                          class="fa-brands fa-github"></i></a>
-                      <a href="https://www.linkedin.com/in/monika-singh-dalawat-2427b4273" target="_blank"><i
-                          class="fa-brands fa-linkedin"></i></a>
-                      <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                      <a href="https://wa.me/8955423699" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                    <a href="./docs/Resume_Monika_Dalawat.pdf" class="btn btn-2" download>Download CV</a>
-                  </div>
-                  <div class="contact-right">
-                    <form action="" name="submit-to-google-sheet">
-                      <input type="text" name="Name" placeholder="Your Name" required />
-                      <input type="email" name="Email" placeholder="Your Email" required />
-                      <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
-                      <button type="submit" class="btn btn-2 sub-btn">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                    <!------------------- Contact ------------------->
-                    <div id="contact">
-                      <div class="container">
-                        <div class="row">
-                          <div class="contact-left">
-                            <h1 class="sub-title">Contact Me</h1>
-                            <p>
-                              <i class="fa-solid fa-envelope"></i>dalawatmonika2801@gmail.com
-                            </p>
-                            <p><i class="fa-solid fa-phone"></i>8955423699</p>
-                            <div class="social-icons">
-                              <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-                              <a href="https://github.com/Monika-1082005/" target="_blank"><i
-                                  class="fa-brands fa-github"></i></a>
-                              <a href="https://www.linkedin.com/in/monika-singh-dalawat-2427b4273" target="_blank"><i
-                                  class="fa-brands fa-linkedin"></i></a>
-                              <a href="mailto:dalawatmonika2801@gmail.com" target="_blank"><i
-                                  class="fa-solid fa-paper-plane"></i></a>
-                              <a href="https://wa.me/8955423699" target="_blank"><i
-                                  class="fa-brands fa-whatsapp"></i></a>
+  <!------------------- Contact ------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-envelope"></i>dalawatmonika2801@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>8955423699</p>
+          <div class="social-icons">
+            <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+            <a href="https://github.com/Monika-1082005/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/monika-singh-dalawat-2427b4273" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:dalawatmonika2801@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
+            <a href="https://wa.me/8955423699" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
-                            </div>
-                            <a href="./docs/Resume_Monika_Dalawat.pdf" class="btn btn-2" download>Download CV</a>
-                          </div>
-                          <div class="contact-right">
-                            <form id="contactForm">
-                              <input type="text" name="Name" placeholder="Your Name" required />
-                              <input type="email" name="Email" placeholder="Your Email" required />
-                              <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
-                              <button type="submit" class="btn btn-2 sub-btn">Submit</button>
-                            </form>
-                            <span id="msg"></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="copyright">
-                        <p>
-                          Created by Monika Dalawat | Copyright &#169; 2023 | All rights
-                          reserved
-                        </p>
-                      </div>
-                    </div>
+          </div>
+          <a href="./docs/Resume_Monika_Dalawat.pdf" class="btn btn-2" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form id="contactForm">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-2 sub-btn">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Created by Monika Dalawat | Copyright &#169; 2023 | All rights
+        reserved
+      </p>
+    </div>
+  </div>
 
-                    <div class="mainContainer">
-                      <div class="bubbles">
-                        <span style="--i:11;"></span>
-                        <span style="--i:20;"></span>
-                        <span style="--i:14;"></span>
-                        <span style="--i:24;"></span>
-                        <span style="--i:12;"></span>
-                        <span style="--i:30;"></span>
-                        <span style="--i:26;"></span>
-                        <span style="--i:15;"></span>
-                        <span style="--i:10;"></span>
-                        <span style="--i:17;"></span>
-                        <span style="--i:28;"></span>
-                        <span style="--i:23;"></span>
-                        <span style="--i:27;"></span>
-                        <span style="--i:19;"></span>
-                        <span style="--i:25;"></span>
-                        <span style="--i:13;"></span>
-                        <span style="--i:16;"></span>
-                        <span style="--i:35;"></span>
+  <div class="mainContainer">
+    <div class="bubbles">
+      <span style="--i:11;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:30;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:35;"></span>
 
-                        <span style="--i:11;"></span>
-                        <span style="--i:20;"></span>
-                        <span style="--i:14;"></span>
-                        <span style="--i:24;"></span>
-                        <span style="--i:12;"></span>
-                        <span style="--i:30;"></span>
-                        <span style="--i:26;"></span>
-                        <span style="--i:15;"></span>
-                        <span style="--i:10;"></span>
-                        <span style="--i:17;"></span>
-                        <span style="--i:28;"></span>
-                        <span style="--i:23;"></span>
-                        <span style="--i:27;"></span>
-                        <span style="--i:19;"></span>
-                        <span style="--i:25;"></span>
-                        <span style="--i:13;"></span>
-                        <span style="--i:16;"></span>
-                        <span style="--i:35;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:30;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:35;"></span>
 
-                      </div>
-                    </div>
+    </div>
+  </div>
 
-                    <script src="client.js"></script>
+  <script src="client.js"></script>
 
 
-                    <!-- JAVASCRIPT  -->
+  <!-- JAVASCRIPT  -->
 
-                    <script>
-                      document.getElementById('contactForm').addEventListener('submit', async function (event) {
-                        event.preventDefault(); // Prevent the default form submission
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function (event) {
+      event.preventDefault(); // Prevent the default form submission
 
-                        const form = event.target;
-                        const formData = new URLSearchParams(new FormData(form));
+      const form = event.target;
+      const formData = new URLSearchParams(new FormData(form));
 
-                        try {
-                          const response = await fetch('http://127.0.0.1:3019/post', {
-                            method: 'POST',
-                            headers: {
-                              'Content-Type': 'application/x-www-form-urlencoded',
-                            },
-                            body: formData.toString(),
-                          });
+      try {
+        const response = await fetch('http://127.0.0.1:3019/post', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: formData.toString(),
+        });
 
-                          const result = await response.json();
+        const result = await response.json();
 
-                          const msgElement = document.getElementById('msg');
-                          if (response.ok) {
-                            msgElement.innerText = result.message;
-                            form.reset(); // Clear the form fields
+        const msgElement = document.getElementById('msg');
+        if (response.ok) {
+          msgElement.innerText = result.message;
+          form.reset(); // Clear the form fields
 
-                            // Clear the message after 5 seconds
-                            setTimeout(() => {
-                              msgElement.innerText = "";
-                            }, 5000); // 5000 milliseconds = 5 seconds
-                          } else {
-                            msgElement.innerText = "There was an error submitting the form.";
-                          }
-                        } catch (error) {
-                          document.getElementById('msg').innerText = "There was an error submitting the form.";
-                          console.error("Error:", error);
-                        }
-                      });
-                    </script>
+          // Clear the message after 5 seconds
+          setTimeout(() => {
+            msgElement.innerText = "";
+          }, 5000); // 5000 milliseconds = 5 seconds
+        } else {
+          msgElement.innerText = "There was an error submitting the form.";
+        }
+      } catch (error) {
+        document.getElementById('msg').innerText = "There was an error submitting the form.";
+        console.error("Error:", error);
+      }
+    });
+  </script>
 
-                    <script>
-                      AOS.init();
-                    </script>
+  <script>
+    AOS.init();
+  </script>
 
-                    <script>
-                      var tablinks = document.getElementsByClassName("tab-links");
-                      var tabcontents = document.getElementsByClassName("tab-contents");
-                      function opentab(tabname) {
-                        for (tablink of tablinks) {
-                          tablink.classList.remove("active-link");
-                        }
-                        for (tabcontent of tabcontents) {
-                          tabcontent.classList.remove("active-tab");
-                        }
-                        event.currentTarget.classList.add("active-link");
-                        document.getElementById(tabname).classList.add("active-tab");
-                      }
-                    </script>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
 
-                    <script>
-                      var sidemenu = document.getElementById("sidemenu");
-                      function openmenu() {
-                        sidemenu.style.right = "0";
-                      }
-                      function closemenu() {
-                        sidemenu.style.right = "-200px";
-                      }
-                    </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
 
-                    <!-- typed js on google-->
-                    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-                    <!-- Setup and start animation! -->
-                    <script>
-                      var typed = new Typed("#element", {
-                        strings: ["Web Developer", "Coding Enthusiast", "Tech-geek", "Coder"],
-                        typeSpeed: 50,
-                      });
-                    </script>
-        </body>
+  <!-- typed js on google-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "Coding Enthusiast", "Tech-geek", "Coder"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
 
 </html>
