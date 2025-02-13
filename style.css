@@ -110,13 +110,13 @@ html {
     padding: 10px 7%;
 }
 
-.bgimg img{
-    border-radius: 5px;
+ /* .bgimg img{ */
+    /* border-radius: 5px;
     filter: grayscale(1);
-    opacity: 0.9;
+    opacity: 0.9; */ 
  /* box-shadow: #6e265e 9px 10px 33px; */
-}
-
+ /* margin-top: 40px; */
+/* } */
 nav {
     display: flex;
     justify-content: space-between;
@@ -410,6 +410,8 @@ nav ul li a:hover::after {
 
 
 /* Contact  */
+
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -500,7 +502,12 @@ form .btn2 {
 nav .fas {
     display: none;
 }
-
+#msg{
+    color: #61b752;
+    margin-top: -35px;
+    display: block;
+    
+}
 @media only screen and (max-width: 960px) {
     /* #header{
         background-image: url(images/phone-background.png); 
@@ -527,6 +534,7 @@ nav .fas {
     #menuIcon{
         position: fixed;
         right: 20px;
+        
     }
 
     nav .fas {
@@ -604,11 +612,7 @@ nav .fas {
     }
 }
 
-#msg {
-    color: #61b752;
-    margin-top: -35px;
-    display: block;
-}
+
 
 .sub-btn {
     
