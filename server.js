@@ -18,9 +18,9 @@ const user_Schema = new mongoose.Schema({
 
 const Users = mongoose.model("data", user_Schema)
 app.use(cors({
-    origin: process.env.CLIENT_ORIGIN || "http://127.0.0.1:5501",
-    methods: "GET,POST",
-    allowedHeaders: "Content-Type"
+  origin: process.env.CLIENT_ORIGIN || "http://127.0.0.1:5501",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
 }));
 app.use(express.static(__dirname))
 app.use(express.urlencoded({ extended: true }))
