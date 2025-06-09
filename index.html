@@ -171,6 +171,18 @@
       <h1 class="sub-title">My Work</h1>
       <div class="work-list">
 
+         <div class="work">
+          <img src="images/calendar.png" alt="Dynamic Event Calendar" class="work-imgs" />
+          <div class="layer">
+            <h3>Event Calendar</h3>
+            <p>
+              "Dynamic Event Calendar" is a simple, efficient tool for managing monthly events. It uses local storage to save events across sessions and lets users search, organize, and export events in JSON format for easy sharing.
+            </p>
+            <a href="https://dynamic-event-calendar-seven.vercel.app/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
         <div class="work">
           <img src="images/AwareHer.png" alt="AwareHer" class="work-imgs" />
           <div class="layer">
@@ -302,7 +314,7 @@
             <a href="https://wa.me/8955423699" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
           </div>
-          <a href="./docs/Resume_Monika_Dalawat.pdf" class="btn btn-2" download>Download CV</a>
+          <a href="./docs/Monika Dalawat Resume.pdf" class="btn btn-2" download>Download CV</a>
         </div>
         <div class="contact-right">
           <form id="contactForm">
@@ -317,7 +329,7 @@
     </div>
     <div class="copyright">
       <p>
-        Created by Monika Dalawat | Copyright &#169; 2023 | All rights
+        Created by Monika Dalawat | Copyright &#169; 2025 | All rights
         reserved
       </p>
     </div>
@@ -370,44 +382,6 @@
 
 
   <!-- JAVASCRIPT  -->
-
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', async function (event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      const form = event.target;
-      const formData = new URLSearchParams(new FormData(form));
-
-      try {
-        const response = await fetch('http://127.0.0.1:3019/post', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-          body: formData.toString(),
-        });
-
-        const result = await response.json();
-
-        const msgElement = document.getElementById('msg');
-        if (response.ok) {
-          msgElement.innerText = result.message;
-          form.reset(); // Clear the form fields
-
-          // Clear the message after 5 seconds
-          setTimeout(() => {
-            msgElement.innerText = "";
-          }, 5000); // 5000 milliseconds = 5 seconds
-        } else {
-          msgElement.innerText = "There was an error submitting the form.";
-        }
-      } catch (error) {
-        document.getElementById('msg').innerText = "There was an error submitting the form.";
-        console.error("Error:", error);
-      }
-    });
-  </script>
-
   <script>
     AOS.init();
   </script>
