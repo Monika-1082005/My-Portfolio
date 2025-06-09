@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       try {
         // console.log('Sending fetch request');
-        const response = await fetch('http://127.0.0.1:3019/post', {
+        const response = await fetch(`${CONFIG.BACKEND_URL}/post`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
